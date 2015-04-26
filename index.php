@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/Request.php';
 require_once __DIR__ . '/TestClass.php';
 require_once __DIR__ . '/ActionMapLoader.php';
 require_once __DIR__ . '/ActionInfo.php';
