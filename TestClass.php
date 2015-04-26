@@ -1,5 +1,6 @@
 <?php
 
+namespace \PHPSingleEntryDemo;
 class TestClass
 {
     public function echoParam()

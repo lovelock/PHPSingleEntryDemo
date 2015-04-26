@@ -1,5 +1,6 @@
 <?php
 
+namespace \PHPSingleEntryDemo;
 class Controller
 {
     protected $mapFile;
