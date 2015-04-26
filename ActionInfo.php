@@ -1,7 +1,5 @@
 <?php
 
-namespace \PHPSingleEntryDemo;
-
 class ActionInfo
 {
     public $name;

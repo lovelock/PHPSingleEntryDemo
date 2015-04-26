@@ -1,6 +1,5 @@
 <?php
 
-namespace \PHPSingleEntryDemo;
 class Request
 {
     public function getValue($key)

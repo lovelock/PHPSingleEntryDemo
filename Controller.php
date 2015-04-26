@@ -1,6 +1,5 @@
 <?php
 
-namespace \PHPSingleEntryDemo;
 class Controller
 {
     protected $mapFile;
@@ -12,17 +11,17 @@ class Controller
 
     public function getActionInfo ($actionName)
     {
-        $map = new ActionMapLoader($this->mapFile);
+        $map = new \ActionMapLoader($this->mapFile);
         foreach ($map->getMap()->action as $action) {
             if (strcasecmp($actionName, $action['name']) == 0) {
-                return new ActionInfo($actionName, $action);
+                return new \ActionInfo($actionName, $action);
             }
         }
     }
 
     public function process()
     {
-        $actionName = Request::getValue('op');
+        $actionName = \Request::getValue('op');
         $actionInfo = $this->getActionInfo($actionName);
 
         $class = $actionInfo->class;

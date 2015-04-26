@@ -1,6 +1,5 @@
 <?php
 
-namespace \PHPSingleEntryDemo;
 class ActionMapLoader
 {
     protected $map;
