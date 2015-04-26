@@ -13,7 +13,7 @@ class Controller
     {
         $map = new ActionMapLoader($this->mapFile);
         foreach ($map->getMap()->action as $action) {
-            if (strcasecmp($actionName, (string)$action['name']) == 0) {
+            if (strcasecmp($actionName, $action['name']) == 0) {
                 return new ActionInfo($actionName, $action);
             }
         }
@@ -21,7 +21,7 @@ class Controller
 
     public function process()
     {
-        $actionName = $_GET['op'];
+        $actionName = Request::getValue('op');
         $actionInfo = $this->getActionInfo($actionName);
 
         $class = $actionInfo->class;

@@ -10,8 +10,8 @@ class ActionInfo
     {
         $attrs = reset($action);
 
-        $this->name = (string)$actionName;
-        $this->class = (string)$attrs['class'];
-        $this->method = (string)$attrs['method'];
+        $this->name = $actionName;
+        $this->class = $attrs['class'];
+        $this->method = $attrs['method'];
     }
 }
