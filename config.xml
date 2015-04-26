@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<classmap>
+    <action name="echoparam" class="TestClass" method="echoParam"></action>
+    <action name="addparams" class="TestClass" method="addParams"></action>
+</classmap>
