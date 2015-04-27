@@ -10,6 +10,6 @@ spl_autoload_register(function ($className) {
         $fileName = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
     }
 
-    $fileName = $fileName . str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+    $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
     require_once $fileName;
 });
